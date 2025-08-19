@@ -155,42 +155,5 @@ public class ClienteDAOimp implements IClienteDAO {
         return false;
     }
 
-        public static void main(String[] args) {
-            ClienteDAOimp clienteDAO = new ClienteDAOimp();
-           /* List<Customers> clientes = clienteDAO.listarclientes();
-            clientes.forEach(System.out::println);*/
-            /*Customers cliente = new Customers("aldair","ruiton","ruiton@gmail.com");
-            boolean agregar = clienteDAO.agregarcliente(cliente);
-            if (agregar!=false) {
-                System.out.println("Succesful agregar cliente" + cliente);
-            } else
-                System.out.println("Error al agregar cliente" + cliente);
-*/
-            /*Customers cliente = new Customers(3);
-            boolean eliminarCliente = clienteDAO.eliminarcliente(cliente);
-            if (eliminarCliente!=false) {
-                System.out.println("El cliente eliminado : " +cliente);
-            }else
-                System.out.println("No se pudo eliminar el cliente" + cliente);*/
 
-           /* Customers cliente = new Customers(5,"fabian","Espinoza@gmail.com","Espinoza");
-            boolean modificarcliente = clienteDAO.modificarcliente(cliente);
-            if (modificarcliente!=false) {
-                System.out.println("SE MODIFICO CORRECTAMENTE" +cliente);
-
-            }else {
-                System.out.println("NO SE MODIFICO CORRECTAMENTE"+cliente);
-            }*/
-            Customers cliente = new Customers(6);
-            boolean buscarCliente = clienteDAO.buscarcliente(cliente);
-            if (buscarCliente!=false) {
-                System.out.println("cliente encontrado .. " + cliente);
-            }else {
-                System.out.println("Cliente no encontrado.." + cliente);
-            }
-
-            System.out.println();
-            List<Customers> clientes = clienteDAO.listarclientes();
-            clientes.forEach(System.out::println);
-        }
 }
